@@ -125,11 +125,10 @@ class FirstPage extends StatelessWidget{
     return Center(
       child: Container(
         margin: const EdgeInsets.fromLTRB(16, 16, 16, 0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        child:  Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
              Row(
-
                       children: [
                         Text('Flutter', style: TextStyle(color: Colors.white, fontSize: 64, fontWeight: FontWeight.bold,),),
                         Expanded(child: FlutterLogo(),
@@ -145,7 +144,7 @@ class FirstPage extends StatelessWidget{
                 IconButton(
                   icon: Icon(Icons.flutter_dash, color: Colors.white,),
                   tooltip: 'Search',
-                  onPressed: null,
+                  onPressed: (){print("hello");},
                 ),
               ],
             ),
@@ -156,9 +155,6 @@ class FirstPage extends StatelessWidget{
                   ),
                 ],
               ),
-
-
-
             ],
           ),
         ),
